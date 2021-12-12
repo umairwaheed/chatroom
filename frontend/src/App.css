@@ -8,16 +8,21 @@
   display: flex;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: 20px;
 }
 
 .Sidebar {
-  border: 1px solid;
   width: 20%;
+  border-right: 1px solid;
 }
 
 .Content {
-  border: 1px solid;
-  margin-left: 1%;
-  width: 79%;
+  width: 80%;
+}
+
+.MessagePane {
+  height: 70%;
+}
+
+.SenderPane {
+  border-top: 1px solid;
 }
