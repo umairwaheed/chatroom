@@ -35,3 +35,11 @@
   margin-top: 5px;
   text-align: left;
 }
+
+.Sidebar .menu-item {
+  border: 1px solid;
+  text-align: left;
+  padding: 3px;
+  margin-top: 3px;
+  margin-right: 3px;
+}
