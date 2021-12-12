@@ -1,7 +1,7 @@
 [flake8]
 
 exclude =
-    migrations,
+    core/migrations/*,
     scripts,
 
 max-line-length = 88

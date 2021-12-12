@@ -24,11 +24,6 @@ repos:
         exclude_types: [html]
         exclude: frontend/src/store/api.ts
 
-  - repo: https://github.com/PyCQA/bandit
-    rev: 1.7.1
-    hooks:
-      - id: bandit
-        exclude: api/tests/.*
   - repo: https://github.com/pycqa/flake8
     rev: 4.0.1
     hooks:
@@ -43,10 +38,3 @@ repos:
         args:
           - --color
           - --fix
-
-  - repo: local
-    hooks:
-      - id: openapi
-        name: check-openapi-spec-file
-        language: script
-        entry: ./scripts/generate_swagger.sh

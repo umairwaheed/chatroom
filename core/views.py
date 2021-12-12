@@ -1,5 +1,6 @@
-from core import models, serializers
 from rest_framework import viewsets
+
+from core import models, serializers
 
 
 class RoomViewSet(viewsets.ModelViewSet):
