@@ -3,5 +3,5 @@ export default function SenderPane() {
     <div className="SenderPane">
       <h2>Sender Pane</h2>
     </div>
-  )
+  );
 }

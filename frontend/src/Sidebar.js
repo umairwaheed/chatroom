@@ -1,4 +1,4 @@
-export default function Sidebar () {
+export default function Sidebar() {
   return (
     <div className="Sidebar">
       <h2>Chatrooms</h2>
@@ -7,5 +7,5 @@ export default function Sidebar () {
         <li>Teams</li>
       </ul>
     </div>
-  )
+  );
 }

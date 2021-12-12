@@ -7,5 +7,5 @@ export default function Content() {
       <MessagePane />
       <SenderPane />
     </div>
-  )
+  );
 }
