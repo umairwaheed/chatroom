@@ -13,13 +13,11 @@ export default function Sidebar() {
   return (
     <div className="Sidebar">
       <h2>Chatrooms</h2>
-      {rooms.map((room) => {
-        return (
-          <Link to={room.name} className="menu-item">
-            <div>{room.name}</div>
-          </Link>
-        );
-      })}
+      {rooms.map((room) => (
+        <Link key={room.name} to={room.name} className="menu-item">
+          <div>{room.name}</div>
+        </Link>
+      ))}
     </div>
   );
 }
