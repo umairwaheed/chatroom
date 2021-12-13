@@ -31,7 +31,16 @@
 }
 
 .SenderPane {
+  display: flex;
   border-top: 1px solid;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+}
+
+.SenderPane input {
+  width: 85%;
+  height: 30px;
 }
 
 .MessagePane .message {

@@ -7,11 +7,11 @@ export default function MessagePane() {
 
   useEffect(
     () =>
-      !context.roomId ||
-      fetch(`/api/rooms/${context.roomId}/messages/`)
+      !context.room ||
+      fetch(`/api/rooms/${context.room.id}/messages/`)
         .then((response) => response.json())
         .then((messages) => setMessages(messages)),
-    [context.roomId]
+    [context.room]
   );
 
   return (

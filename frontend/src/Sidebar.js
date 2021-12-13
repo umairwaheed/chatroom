@@ -18,9 +18,9 @@ export default function Sidebar() {
       {rooms.map((room) => (
         <Link
           key={room.id}
-          to={room.name}
+          to={`/rooms/${room.id}`}
           className="menu-item"
-          onClick={() => context.setRoomId(room.id)}
+          onClick={() => context.setRoom(room)}
         >
           <div>{room.name}</div>
         </Link>

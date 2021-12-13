@@ -10,7 +10,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
-          <Route path="*" element={<App />} />
+          <Route path="rooms/:roomId" element={<App />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,7 +1,20 @@
+const sendMessage = (message) => {
+  fetch("/api/rooms/", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "X-CSRFToken": document.forms.csrf.csrfmiddlewaretoken.value,
+    },
+    body: JSON.stringify({}),
+  });
+}
+
 export default function SenderPane() {
+
   return (
     <div className="SenderPane">
-      <h2>Sender Pane</h2>
+      <input type="text" />
+      <button>Send</button>
     </div>
   );
 }

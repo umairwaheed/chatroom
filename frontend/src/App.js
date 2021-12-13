@@ -5,11 +5,11 @@ import Sidebar from "./Sidebar";
 import RoomContext from "./context";
 
 function App() {
-  const [roomId, setRoomId] = useState(null);
+  const [room, setRoom] = useState(null);
 
   return (
     <div className="App">
-      <RoomContext.Provider value={{ roomId, setRoomId }}>
+      <RoomContext.Provider value={{ room, setRoom }}>
         <header className="App-header">
           <Sidebar />
           <Content />
