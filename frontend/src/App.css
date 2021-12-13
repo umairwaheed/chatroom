@@ -46,7 +46,8 @@
   text-align: left;
   padding: 3px;
   margin-bottom: 3px;
-  margin-right: 3px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .Sidebar a.menu-item {
