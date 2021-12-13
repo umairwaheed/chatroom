@@ -28,7 +28,7 @@ class RoomFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = models.Room
 
-    name = factory.Faker('uri_path')
+    name = factory.Faker("uri_path")
 
     @factory.post_generation
     def add_slash(obj, *args, **kwargs):
@@ -40,5 +40,5 @@ class MessageFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = models.Message
 
-    text = factory.Faker('text')
+    text = factory.Faker("text")
     room = factory.SubFactory(RoomFactory)
