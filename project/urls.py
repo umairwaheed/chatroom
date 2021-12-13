@@ -9,4 +9,7 @@ router = routers.DefaultRouter()
 router.register("rooms", views.RoomViewSet)
 router.register("messages", views.MessageViewSet)
 
-urlpatterns = [path("admin/", admin.site.urls), path("", include(router.urls))]
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("api/", include(router.urls)),
+]
