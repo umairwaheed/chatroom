@@ -6,7 +6,7 @@ export default function Room() {
   const params = useParams();
 
   return (
-    <div className="Content">
+    <div className="Room">
       <h3>/{params["*"]}</h3>
       <MessagePane />
       <SenderPane />

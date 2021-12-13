@@ -15,11 +15,11 @@
   border-right: 1px solid;
 }
 
-.Content {
+.Room {
   width: 80%;
 }
 
-.Content h3 {
+.Room h3 {
   text-align: left;
   margin-left: 10px;
 }
