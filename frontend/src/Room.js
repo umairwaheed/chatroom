@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import MessagePane from "./MessagePane";
 import SenderPane from "./SenderPane";
 
-export default function Content() {
+export default function Room() {
   const params = useParams();
 
   return (
