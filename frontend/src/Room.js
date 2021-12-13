@@ -7,7 +7,7 @@ export default function Content() {
 
   return (
     <div className="Content">
-      <h3>/{params.roomName}</h3>
+      <h3>/{params["*"]}</h3>
       <MessagePane />
       <SenderPane />
     </div>
