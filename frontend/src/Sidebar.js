@@ -16,7 +16,12 @@ export default function Sidebar() {
     <div className="Sidebar">
       <h3>Chatrooms</h3>
       {rooms.map((room) => (
-        <Link key={room.id} to={room.name} className="menu-item" onClick={() => context.setRoomId(room.id)}>
+        <Link
+          key={room.id}
+          to={room.name}
+          className="menu-item"
+          onClick={() => context.setRoomId(room.id)}
+        >
           <div>{room.name}</div>
         </Link>
       ))}

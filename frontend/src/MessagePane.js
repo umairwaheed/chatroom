@@ -7,7 +7,8 @@ export default function MessagePane() {
 
   useEffect(
     () =>
-      !context.roomId || fetch(`/api/rooms/${context.roomId}/messages/`)
+      !context.roomId ||
+      fetch(`/api/rooms/${context.roomId}/messages/`)
         .then((response) => response.json())
         .then((messages) => setMessages(messages)),
     [context.roomId]
@@ -16,7 +17,9 @@ export default function MessagePane() {
   return (
     <div className="MessagePane">
       {messages.map((message) => (
-        <div key={message.id} className="message">{message.text}</div>
+        <div key={message.id} className="message">
+          {message.text}
+        </div>
       ))}
     </div>
   );
