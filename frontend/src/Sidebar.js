@@ -14,7 +14,7 @@ export default function Sidebar() {
     <div className="Sidebar">
       <h2>Chatrooms</h2>
       {rooms.map((room) => (
-        <Link key={room.name} to={room.name} className="menu-item">
+        <Link key={room.id} to={room.name} className="menu-item">
           <div>{room.name}</div>
         </Link>
       ))}
