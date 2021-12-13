@@ -1,25 +1,25 @@
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   const [rooms, setRooms] = useState([]);
 
   useEffect(() => {
-    fetch("/api/rooms/").then((response) => {
-      console.log(response);
-      return response.json()
-    }).then((args) => console.log(args));
+    fetch("/api/rooms/")
+      .then((response) => response.json())
+      .then((rooms) => setRooms(rooms));
   }, []);
 
   return (
     <div className="Sidebar">
       <h2>Chatrooms</h2>
-      <Link to="/animals" className="menu-item">
-        <div>/animals</div>
-      </Link>
-      <Link to="/teams" className="menu-item">
-        <div>/teams</div>
-      </Link>
+      {rooms.map((room) => {
+        return (
+          <Link to={room.name} className="menu-item">
+            <div>{room.name}</div>
+          </Link>
+        );
+      })}
     </div>
   );
 }
