@@ -12,4 +12,12 @@ router.register("messages", views.MessageViewSet)
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/", include(router.urls)),
+    path(
+        "api/rooms/<str:room_pk>/messages/",
+        views.RoomMessageViewSet.as_view(
+            {
+                "get": "list",
+            }
+        ),
+    ),
 ]

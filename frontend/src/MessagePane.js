@@ -1,10 +1,21 @@
+import { useEffect, useState } from "react";
+
 export default function MessagePane() {
+  const [messages, setMessages] = useState([]);
+
+  useEffect(
+    () =>
+      fetch("/api/rooms/1/messages/")
+        .then((response) => response.json())
+        .then((messages) => setMessages(messages)),
+    []
+  );
+
   return (
     <div className="MessagePane">
-      <div className="message">Message 1</div>
-      <div className="message">Message 2</div>
-      <div className="message">Message 3</div>
-      <div className="message">Message 4</div>
+      {messages.map((message) => (
+        <div className="message">{message.text}</div>
+      ))}
     </div>
   );
 }
