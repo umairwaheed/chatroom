@@ -1,5 +1,5 @@
 import {useContext} from "react";
-import RoomContext from "./context";
+import RoomContext from "../context";
 import MessagePane from "./MessagePane";
 import SenderPane from "./SenderPane";
 

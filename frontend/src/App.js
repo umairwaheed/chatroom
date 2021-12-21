@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import Content from "./Room";
-import Sidebar from "./Sidebar";
+import Room from "./components/Room";
+import Sidebar from "./components/Sidebar";
 import RoomContext from "./context";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <RoomContext.Provider value={{ room, setRoom }}>
         <header className="App-header">
           <Sidebar />
-          <Content />
+          <Room />
         </header>
       </RoomContext.Provider>
     </div>

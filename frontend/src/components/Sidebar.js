@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import RoomContext from "./context";
+import RoomContext from "../context";
 
 export default function Sidebar() {
   const [rooms, setRooms] = useState([]);

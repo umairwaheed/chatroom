@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import RoomContext from "./context";
+import RoomContext from "../context";
 
 export default function MessagePane() {
   const [messages, setMessages] = useState([]);
